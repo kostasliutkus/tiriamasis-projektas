@@ -1,9 +1,13 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
-    import About from './AboutComponent.vue';
+  import About from './AboutComponent.vue';
+  import { useClipboard } from '@vueuse/core'
   const content = ref({
     title: 'Bagiamasis projektas',
   })
+  const creator_email = ref("kosliu@ktu.lt")
+  const guide_email = ref("sarunas.packevicius@ktu.lt")
+  const { copy } = useClipboard({ creator_email,guide_email })
 </script>
 
 <template>
@@ -65,6 +69,7 @@
                       link
                       prepend-icon="mdi-email"
                       title="kosliu@ktu.lt"
+                      @click="copy(creator_email)"
                     />
                   </v-list>
                 </v-card>
@@ -85,7 +90,8 @@
                     <v-list-item
                       link
                       prepend-icon="mdi-email"
-                      title="sarunas.packevicius@ktu.edu"
+                      title="sarunas.packevicius@ktu.lt"
+                      @click="copy(guide_email)"
                     />
                   </v-list>
                 </v-card>

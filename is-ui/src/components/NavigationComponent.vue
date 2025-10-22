@@ -47,16 +47,19 @@
     <v-list-item
       link
       prepend-icon="mdi-folder"
+      disabled
       title="2 Semestras"
     />
     <v-list-item
       link
       prepend-icon="mdi-folder"
+      disabled
       title="3 Semestras"
     />
     <v-list-item
       link
       prepend-icon="mdi-folder"
+      disabled
       title="4 Semestras"
     />
 
