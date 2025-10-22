@@ -14,7 +14,8 @@
     ],
     nonFunctionalRequirements: [
       'Sistema veikia žiniatinklyje asmeniniame kompiuteryje. Operacinė sistema nesvarbi',
-    ]
+    ],
+    annotation: 'User Interface, Machine Learning, Android, Web Application.'
   })
 </script>
 <template>
@@ -25,6 +26,21 @@
     </v-col>
     </v-row>
 
+          <v-row>
+      <v-col cols="12">
+        <v-card class="mb-6" elevation="10" color="primary">
+          <v-card-text class="pa-6">
+            <v-row>
+              <v-col cols="12">
+                <p class="text-h5">Raktažodžiai/Anotacija</p>
+                <p class="text-body-1">{{ content.annotation }}</p>
+              </v-col>
+              </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    
     <v-row justify="center">
       <v-col cols="12">
         <v-card class="mb-6" elevation="10" color="primary">
@@ -42,6 +58,8 @@
           </v-card-text>
         </v-card>
       </v-col>
+
+
         <v-col>
         <v-card class="mb-6" elevation="10" color="primary">
           <v-card-title class="text-h5">
@@ -82,5 +100,6 @@
         </v-card>
       </v-col>
     </v-row>
+    
   </v-container>
 </template>

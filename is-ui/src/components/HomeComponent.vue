@@ -29,8 +29,8 @@
         target="_blank">
         </v-btn>
       </template>
-      <template v-slot:title>
-        <h1 width="80%" class="text-h4 font-weight-bold">
+      <template v-slot:title >
+        <h1 width="80%" class="text-h4 font-weight-bold ">
             {{ content.title }}
         </h1>
       </template>
