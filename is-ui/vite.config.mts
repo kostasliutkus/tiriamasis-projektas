@@ -65,6 +65,12 @@ export default defineConfig({
     ],
   },
   server: {
+    host: true,
     port: 3000,
+  },
+  preview: {
+    port: process.env.PORT ? Number.parseInt(process.env.PORT) : 5173,
+    allowedHosts: ['cloud-project-cxke.onrender.com'],
+    host: '0.0.0.0',
   },
 })
