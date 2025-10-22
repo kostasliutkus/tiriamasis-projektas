@@ -5,9 +5,9 @@
   const content = ref({
     title: 'Bagiamasis projektas',
   })
-  const creator_email = ref("kosliu@ktu.lt")
-  const guide_email = ref("sarunas.packevicius@ktu.lt")
-  const { copy } = useClipboard({ creator_email,guide_email })
+  const creator_email  = ref('kosliu@ktu.lt')
+  const guide_email = ref('sarunas.packevicius@ktu.lt')
+  const { copy } = useClipboard()
 </script>
 
 <template>
