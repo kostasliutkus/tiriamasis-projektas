@@ -24,7 +24,6 @@
         href="https://github.com/kostasliutkus/tiriamasis-projektas"
         target="_blank">
         </v-btn>
-            <!-- <a href="https://github.com/kostasliutkus/tiriamasis-projektas"></a> -->
       </template>
       <template v-slot:title>
         <h1 width="80%" class="text-h4 font-weight-bold">
