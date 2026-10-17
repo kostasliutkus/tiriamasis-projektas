@@ -70,7 +70,7 @@ export default defineConfig({
   },
   preview: {
     port: process.env.PORT ? Number.parseInt(process.env.PORT) : 5173,
-    allowedHosts: ['cloud-project-cxke.onrender.com',"kliutkus-is.onrender.com",'tiriamasis-projektas.kostliutk2.workers.dev'],
+    allowedHosts: ['cloud-project-cxke.onrender.com',"kliutkus-is.onrender.com",'tiriamasis-projektas.kostliutk2.workers.dev','kostas-is.lt'],
     host: '0.0.0.0',
   },
 })
