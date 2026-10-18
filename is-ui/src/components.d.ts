@@ -12,9 +12,15 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AboutComponent: typeof import('./components/AboutComponent.vue')['default']
+    FooterComponent: typeof import('./components/FooterComponent.vue')['default']
     HomeComponent: typeof import('./components/HomeComponent.vue')['default']
     NavigationComponent: typeof import('./components/NavigationComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Semester1: typeof import('./components/semesters/Semester1.vue')['default']
+    Semester2: typeof import('./components/semesters/Semester2.vue')['default']
+    Semester3: typeof import('./components/semesters/Semester3.vue')['default']
+    Semester4: typeof import('./components/semesters/Semester4.vue')['default']
+    SemesterComponent: typeof import('./components/semesters/SemesterComponent.vue')['default']
   }
 }
