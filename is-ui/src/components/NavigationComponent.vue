@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import { VNavigationDrawer } from 'vuetify/components'
   import { ref, onMounted,defineAsyncComponent, type Component } from 'vue'
   import { signOut, onAuthStateChanged } from 'firebase/auth'
   import { auth } from '@/plugins/firebase'
@@ -41,10 +40,10 @@
   }
   const items: TabItem[] = [
     {label: 'Pagrindinis', component: defineAsyncComponent(() => import('@/components/HomeComponent.vue')) },
-    {label: '1 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/SemesterComponent.vue')),disabled: true},
-    {label: '2 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/SemesterComponent.vue')),disabled: true},
-    {label: '3 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/SemesterComponent.vue')),disabled: true},
-    {label: '4 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/SemesterComponent.vue')),disabled: true},
+    {label: '1 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/Semester1.vue')), disabled: true},
+    {label: '2 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/Semester2.vue')), disabled: true},
+    {label: '3 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/Semester3.vue')), disabled: true},
+    {label: '4 Semestras', component: defineAsyncComponent(() => import('@/components/semesters/Semester4.vue')), disabled: true},
   ]
   const tab = ref(items[0])
 
