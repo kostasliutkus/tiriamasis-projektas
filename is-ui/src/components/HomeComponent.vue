@@ -1,28 +1,39 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
   const content = ref({
-    title: 'Sužaidybinta pirmosios pagalbos mokymo sistema, paremta klaidų istorija',
+    title: 'Sužaidybinta pirmosios pagalbos mokymo sistema, paremta vartotojo klaidų istorija',
     goal: 'Projekto tikslas',
-    goalDescription: 'Sukurti žiniatinklio įrankį, android programėlių kūrėjams, kuris padėtų atpažinti grafinės vartotojo sąsajos problemas. Kuriant įrankį siekiama palengvinti testuotojų ir programėlių kūrėjų darbo procesus. ',
+    goalDescription: 'Sukurti ir realizuoti pirmosios pagalbos suteikimo mokymo sistema, parinkti jai sprendimo priėmimo algoritmą, kuris remdamasis ankstesnėmis besimokančiojo klaidomis parenka sekančius mokymosi etapus',
     description: 'Projekto aprašymas',
-    descriptionText: 'Šis įrankis naudos „droidbot“ atvirojo kodo programinę įrangą padaryti android programėlių langų ekrano kopijas. Darbo metu bus lyginami įvairus skirtingi mašininio mokymosi ir tradiciniai algoritmai grafinės vartotojo sąsajos klaidų atradimui.',
+    descriptionText: 'Ši sistema skirta vartotojus apmokyti reaguoti ir suteikti efektyviai pirmąją pagalbą kritinių/karo atveju. Darbo metu bus lyginami įvairus skirtingi sprendimo priėmimo algoritmai efektyvesniam mokinio mokymuisi ir rezultato pasiekimo tobulinimui',
     functions: [
-        'Android programėlės diegimo failo įkėlimas.',
-        'Android programėlės grafinės vartotojo sąsajos ekrano kopijų sukūrimas.',
-        'Grafinės sąsajos klaidų atpažinimas.'
+        'Sistema pateikia scenarijų',
+        'Scenarijus baigiasi vartotojui išgelbėjus visas aukas',
+        'Scenarijus yra apribojamas laiko limitu',
+        'Scenarijus gali būti nutraukiamas pasiekus laiko limitą',
+        'Po scenarijaus vartotojui pateikiami rezultatai',
+        'Scenarijų grupėje sekantis scenarijus visada parenkamas pagal praeito scenarijaus klaidas',
+        'Scenarijus gali apimti keletą aukų',
+        'Scenarijus pateikia keletą galimų gydymo sprendimų',
+        'Vartotojas gali įvertinti aukos gyvybinius rodiklius',
+        'Vartotojas gali įvertinti aukos išorinius sužeidimus',
 
     ],
     nonFunctionalRequirements: [
       'Sistema veikia žiniatinklyje asmeniniame kompiuteryje. Operacinė sistema nesvarbi',
+      'Progresas yra išsaugojamas uždarius programėlę',
+      'Sistema lengva pradėti mokymosi scnearijų',
+      'Vartotojui yra paaiškinama, kaip elgtis su sistema',
+      'Sistema saugo ir vartotojui leidžia peržiūrėti jo pamokų/scenarijų istoriją ir rezultatus'
     ],
-    annotation: 'User Interface, Machine Learning, Android, Web Application.'
+    annotation: 'Decision algorithms, First aid, Education, Web Application.'
   })
 </script>
 <template >
-  <v-container class="py-8" >
+  <v-container class="py-8" height="auto" >
     <v-row justify="center" class="mb-6">
       <v-col cols="12">
-        <h1 class="text-h4 text-center mb-8">{{ content.title }}</h1>
+        <h1 class="text-h4 text-center mb-8 font-weight-bold">{{ content.title }}</h1>
     </v-col>
     </v-row>
 

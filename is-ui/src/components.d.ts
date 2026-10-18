@@ -18,9 +18,12 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Semester1: typeof import('./components/semesters/Semester1.vue')['default']
+    Semester1Component: typeof import('./components/semesters/Semester1.vue')['default']
     Semester2: typeof import('./components/semesters/Semester2.vue')['default']
+    Semester2Component: typeof import('./components/semesters/Semester2.vue')['default']
     Semester3: typeof import('./components/semesters/Semester3.vue')['default']
+    Semester3Component: typeof import('./components/semesters/Semester3.vue')['default']
     Semester4: typeof import('./components/semesters/Semester4.vue')['default']
-    SemesterComponent: typeof import('./components/semesters/SemesterComponent.vue')['default']
+    Semester4Component: typeof import('./components/semesters/Semester4.vue')['default']
   }
 }

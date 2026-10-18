@@ -9,7 +9,8 @@ import Nav from './components/NavigationComponent.vue'
       
       <v-parallax
           cover
-          height="100vh"
+          min-height="100vh"
+          height="auto"
           src="@/assets/photos/main-2.jpg"
         >
         <Nav />
