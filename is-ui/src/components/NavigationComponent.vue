@@ -107,7 +107,7 @@
         :value="item.label"
       >
         <div class="tab-content">
-          <HomeComponent />
+          <component :is="item.component" />
         </div>
       </v-tabs-window-item>
     </v-tabs-window>

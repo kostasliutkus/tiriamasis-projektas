@@ -46,7 +46,7 @@ const login = async () => {
 </script>
 
 <template>
-  <v-container fluid class="fill-height">
+  <v-container fluid class="fill-height" max-height="100vh">
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="6" lg="4">
         <v-card elevation="10" class="pa-4">
