@@ -28,18 +28,28 @@ const { copy } = useClipboard()
                 <v-btn icon="mdi-content-copy" size="small" variant="text" :aria-label="`Kopijuoti ${contact.email}`"
                     @click="copy(contact.email)" />
             </v-card>
+            
         </div>
-
+        
         <v-divider class="my-1" thickness="2" length="50" />
 
-        <div class="text-body-2 text-medium-emphasis text-center" style="max-width: 720px">
+        <!-- <div class="text-body-2 text-medium-emphasis text-center" style="max-width: 720px">
             Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo
             interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc.
-        </div>
-
-        <div class="text-caption text-disabled">
+        </div> -->
+<v-btn
+            variant="flat"
+            color="primary"
+          class="text-none"
+          prepend-icon="mdi-github"
+          href="https://github.com/kostasliutkus/tiriamasis-projektas.git"
+        >
+        Github
+        </v-btn>
+        <div class="text-caption text-disabled" width="50%">
             © {{ new Date().getFullYear() }}
         </div>
+        
     </v-footer>
 </template>
 <style scoped></style>

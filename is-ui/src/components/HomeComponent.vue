@@ -26,7 +26,7 @@
       'Vartotojui yra paaiškinama, kaip elgtis su sistema',
       'Sistema saugo ir vartotojui leidžia peržiūrėti jo pamokų/scenarijų istoriją ir rezultatus'
     ],
-    annotation: 'Decision algorithms, First aid, Education, Web Application.'
+    annotation: 'Decision algorithms, First aid, Education, Web Application, Tutoring'
   })
 </script>
 <template >
