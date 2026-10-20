@@ -42,7 +42,7 @@ const { copy } = useClipboard()
             color="primary"
           class="text-none"
           prepend-icon="mdi-github"
-          href="https://github.com/kostasliutkus/tiriamasis-projektas.git"
+          href="https://github.com/kostasliutkus/tiriamasis-kl.git"
         >
         Github
         </v-btn>
